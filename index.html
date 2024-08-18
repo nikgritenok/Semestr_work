@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="welcome-page">
+        <h1>Добро пожаловать!</h1>
+        <label for="username">Введите ваше имя:</label>
+        <input type="text" id="username" placeholder="Имя">
+        <button id="next-btn">Далее</button>
+    </div>
+
+    <!-- Основная страница -->
+    <div id="main-page" style="display:none;">
+        <header>
+            <h1 id="greeting"></h1>
+        </header>
+        <div id="content">
+            <!-- Здесь будет основной контент сайта -->
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
