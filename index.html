@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="welcome-page">
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="welcome-page-wrap">
+      <div class="welcome-page">
         <h1>Добро пожаловать!</h1>
-        <label for="username">Введите ваше имя:</label>
-        <input type="text" id="username" placeholder="Имя">
-        <button id="next-btn">Далее</button>
+        <div class="welcome-page__input">
+          <label for="username">Введите ваше имя:</label>
+          <input
+            type="text"
+            class="welcome-page__input-username"
+            placeholder="Имя"
+          />
+        </div>
+        <button class="welcome-page__button">Далее</button>
+      </div>
     </div>
 
     <!-- Основная страница -->
-    <div id="main-page" style="display:none;">
-        <header>
-            <h1 id="greeting"></h1>
-        </header>
-        <div id="content">
-            <!-- Здесь будет основной контент сайта -->
-        </div>
+    <div class="main-page" style="display: none">
+      <header>
+        <h1 class="greeting"></h1>
+      </header>
+      <div id="content">
+        <!-- Здесь будет основной контент сайта -->
+      </div>
     </div>
 
-    <script src="app.js"></script>
-</body>
+    <script src="/js/app.js"></script>
+  </body>
 </html>

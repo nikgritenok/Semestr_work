@@ -1,0 +1,58 @@
+.welcome-page-wrap {
+  display: flex; // Включаем Flexbox
+  justify-content: center; // Горизонтальное выравнивание по центру
+  align-items: center; // Вертикальное выравнивание по центру
+  height: 100vh; // Устанавливаем высоту блока на 100% от высоты экрана
+}
+
+.welcome-page {
+  width: 300px; // Ширина блока (квадрат)
+  height: 300px; // Высота блока (квадрат)
+  background-color: white;
+  border-radius: 10px; // Закругленные углы
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Тень
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Распределение элементов
+  align-items: center;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .welcome-page__input {
+    width: 100%;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+  }
+
+  .welcome-page__button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
